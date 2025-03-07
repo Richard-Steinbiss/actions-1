@@ -16,4 +16,4 @@ jobs:
         - name: Echo Docker Details
           run: docker info
         - name: Run Images
-          run: docker run hellow-world
+          run: docker run hello-world
