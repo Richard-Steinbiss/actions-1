@@ -12,7 +12,7 @@ on:
                 options:
                 - unit
                 - integration
-                - al
+                - all
                 required: true
             environment:
                 description: "Choose an environment"
@@ -38,6 +38,6 @@ jobs:
             echo "Build number: ${{ inputs.build-number}}"
             echo "Message: ${{ inputs.message}}"
         - name: Run tests (if selected)
-          if: ${{ inputs.run-tests == 'true' }}
+          if: ${{ inputs.run-tests == true }}
           run: echo "Testing.........."
           
